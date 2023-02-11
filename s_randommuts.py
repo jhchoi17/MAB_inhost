@@ -270,7 +270,8 @@ print(itera)
 count_iter=itera
 
 all_muts_sum={}
-outfile=open('10k_randommuts_results.csv','w') ##write a new file 
+outfilename=itera+'randommuts_results.csv'
+outfile=open(outfilename,'w') ##write a new file
 
 while count_iter > 0:
 	all_muts={} ##dictionary of gene: how many strains have that mutation (not counting intronic for now)
